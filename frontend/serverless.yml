@@ -1,0 +1,35 @@
+service:
+  name: social-auth-frontend
+
+plugins:
+  - serverless-hooks-plugin
+  - serverless-s3-sync
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: ${env:STAGE}
+  region: ap-southeast-1
+
+resources:
+  Resources:
+    StaticSite:
+      Type: AWS::S3::Bucket
+      Properties:
+        AccessControl: PublicRead
+        BucketName: ${self:custom.bucketName}
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          # Must set a value for ErrorDocument, otherwise will get 404 Error when access non root URL
+          ErrorDocument: index.html
+
+custom:
+#  siteName: social-auth-frontend.com
+  bucketName: social-auth-frontend
+  hooks:
+    before:package:createDeploymentArtifacts:
+      - npm run build
+  s3Sync:
+    - bucketName: ${self:custom.bucketName}
+      localDir: build
+      acl: public-read

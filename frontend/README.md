@@ -1,0 +1,1 @@
+A simple react app for demostrating OAuth2 authentication, based on the application from https://github.com/callicoder/spring-boot-react-oauth2-social-login-demo/tree/master/react-social

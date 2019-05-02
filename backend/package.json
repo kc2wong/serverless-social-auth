@@ -1,0 +1,39 @@
+{
+  "name": "serverless-aws-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "offline": "cross-env NODE_ENV=dev sls offline start",
+    "staging": "cross-env NODE_ENV=staging sls deploy",
+    "deploy": "cross-env NODE_ENV=prd sls deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mriso@bitbucket.org/mriso/serverless-aws-nodejs.git"
+  },
+  "author": "Michele Riso <riso.michele@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/mriso/serverless-aws-nodejs#readme",
+  "dependencies": {
+    "aws-sdk": "^2.441.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "*",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "passport": "^0.4.0",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth20": "^2.0.0",
+    "serverless-http": "*",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "serverless-dotenv-plugin": "^2.0.1",
+    "serverless-offline": "^4.9.4"
+  }
+}

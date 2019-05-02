@@ -1,0 +1,48 @@
+{
+  "name": "social-auth-backend-ts",
+  "version": "1.0.0",
+  "description": "Serverless webpack example using Typescript",
+  "main": "handler.js",
+  "scripts": {
+    "offline": "cross-env NODE_ENV=dev sls offline start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.444.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "passport": "^0.4.0",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth20": "^2.0.0",
+    "serverless-http": "^2.0.1",
+    "source-map-support": "^0.5.10",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.5",
+    "@types/aws-lambda": "^8.10.24",
+    "@types/aws-sdk": "^2.7.0",
+    "@types/express": "^4.16.1",
+    "@types/express-jwt": "0.0.42",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/lodash": "^4.14.123",
+    "@types/node": "^10.12.18",
+    "@types/passport": "^1.0.0",
+    "@types/passport-github": "^1.1.5",
+    "@types/uuid": "^3.4.4",
+    "cross-env": "^5.2.0",
+    "serverless-offline": "^4.9.4",
+    "serverless-webpack": "^5.2.0",
+    "serverless-dotenv-plugin": "^2.0.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0"
+  },
+  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "license": "MIT"
+}
