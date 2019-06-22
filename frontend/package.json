@@ -25,6 +25,7 @@
   ],
   "devDependencies": {
     "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
     "serverless": "^1.41.1",
     "serverless-hooks-plugin": "^1.1.0",
     "serverless-s3-sync": "^1.8.0"
