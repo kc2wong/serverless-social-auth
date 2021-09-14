@@ -21,7 +21,7 @@
     "passport-github": "^1.1.0",
     "passport-google-oauth20": "^2.0.0",
     "serverless-http": "^2.0.1",
-    "set-value": "^3.0.1",
+    "set-value": "^4.0.1",
     "source-map-support": "^0.5.10",
     "uuid": "^3.3.2"
   },
