@@ -18,7 +18,7 @@
   "homepage": "https://bitbucket.org/mriso/serverless-aws-nodejs#readme",
   "dependencies": {
     "aws-sdk": "^2.441.0",
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "express": "*",
